@@ -1,0 +1,126 @@
+/*-----------Latest Release----------*/
+
+#latest_release{
+    width: 100%;
+}
+
+.section_header{
+    letter-spacing: 0.2rem;
+    font-size: 20px;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+/*----latest release track container---*/
+
+.latest_release-track-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+}
+
+/*----latest release track----*/
+
+.latest_release-track{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 30px;
+    padding: 0px;
+}
+
+.logo_detail_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.logo_container{
+    height: 80px;
+    width: 80px;
+    padding-right: 2%;
+}
+
+.logo_container img{
+    height: 100%;
+    width: 100%;
+}
+
+.track_detail_container{
+    width: 30%;
+}
+
+.track_name-container{
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+}
+
+.track_release_date-continer{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 15px;
+    color: #b3b3b3;
+    font-weight: 100;
+}
+
+.drop_down_icon_and_track_duration-container{
+    width: 10%;
+    height: 100%;
+    color: #93a8b3;
+}
+
+.drop_down_menu{
+    margin-top: 10px;
+}
+
+.menu{
+    display: none;
+}
+
+.drop-down-menu-list-container{
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.drop-down-menu-list-content{
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.drop-down-menu-list-content a{
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    padding: 4px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    white-space: nowrap;
+}
+
+.drop-down-menu-list-container input+label+.drop-down-menu-list-content {
+    display: none;
+}
+.drop-down-menu-list-container input:checked+label+.drop-down-menu-list-content {
+    display: block;
+}
+
+.track_duration{
+    margin-top: 10px;
+}

@@ -1,0 +1,82 @@
+/*------home corousel-------*/
+
+#home-corousel{
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.carousel{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel__track--container{
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.carousel__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: white;
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer; 
+}
+.carousel__button:hover{
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.carousel__button--left{
+    left: 40px;
+    z-index: 1;
+}
+
+.carousel__button--right{
+    right: 40px;
+}
+
+.carousel__nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator{
+    border: 0px solid white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 12px;
+}
+
+.current-slide{
+    background: rgba(255, 255, 255, 0.75);
+}

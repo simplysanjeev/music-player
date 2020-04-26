@@ -1,0 +1,155 @@
+/*----aside section-----*/
+
+aside{
+    width: 20%;    
+    float:right;
+}
+/*-----Aside section header-----*/
+#aside-section-header{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+#queue-label{
+    display: inline-block;
+    width: 60%;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: monospace;
+}
+
+#drop-down-list{
+    display: inline-block;
+    position: relative;
+    width: 38%;
+}
+
+#drop-down-list input{
+    display: none;
+}
+
+#drop-down-list label{
+    display: block;
+    padding-top: 5px;
+    text-align: center;
+    height: 100%;
+    color: #4ddabb;
+}
+
+#drop-down-list label::after{
+    font-family: "Font Awesome 5 Free";
+    content:'\f0da';
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px 0px 0px 4px;
+    color: white;
+}
+
+#drop-down-list input:checked+label::after{
+    content:'\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px 0px 0px 4px; 
+    margin-top: 4px; 
+    color: white;
+}
+
+#drop-down-list-content{
+    position: absolute;
+    width: 200%;
+    background-color: white;
+    right: 0px;
+    border-radius: 4px;
+}
+
+#drop-down-list-content a{
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    padding: 4px;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+#drop-down-list input+label+#drop-down-list-content{
+    display:none;
+}
+
+#drop-down-list input:checked+label+#drop-down-list-content{
+    display:block;
+}
+
+
+/*------List of songs in queue-------*/
+#list-of-songs-in-queue-container{
+    width:100%;
+}
+
+#list-of-songs-in-queue-container ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.queue-item-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.song-number{
+    width: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-image-container{
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.music-image-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.music-detail-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.music-detail-container div{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.music-detail-container .song-name{
+    font-size: 15px;
+}
+
+.music-detail-container .singer-name{
+     font-size: 12px;
+}
+.heart-icon{
+    width: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart-icon button{
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: #93a8b3;
+}

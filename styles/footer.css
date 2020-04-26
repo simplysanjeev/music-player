@@ -1,0 +1,184 @@
+/*-----Footer Section------*/
+
+footer{
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282828;
+}
+
+footer img{
+    width: 4rem;
+}
+
+/*----Music player detail box------*/
+#song-detail-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    padding:0px;
+}
+
+#music-logo-container{
+    width: 60px;
+    height: 60px;
+}
+
+#music-logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+#detail-container{
+    width: 35%;
+    overflow: hidden;
+    margin-right: 6px;
+}
+
+#detail-container div{
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.song-name{
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+}
+
+.singer-name{
+    color: #b3b3b3;
+    font-weight: 100;
+}
+
+#like-dislike-icon-container{
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#like-dislike-icon-container button{
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0px solid #000000;
+}
+
+/*--Audio Player Container--*/
+
+#audio-player-container{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*---Audio control buttons-----*/
+
+#music-player-control-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    overflow: hidden;
+    width: 60%;
+}
+
+#music-player-control-container button{
+    display: inline-block;
+    background-color: transparent;
+    color: #b3b3b3;
+    border: 0px solid #000000;
+    font-size: 1rem;
+    margin: 10px 10px 0px 10px;
+}
+#slider-container span{
+    letter-spacing: 0.1rem;
+    color: #b3b3b3;
+}
+/*---Slider----*/
+
+.slider-container{
+    height: 25%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    height: 8px;
+    background-image: linear-gradient(90deg, #3ae98f 50%, #404040 50%);
+    border-radius: 4px;
+    -webkit-appearance:none;
+}
+
+.slider:hover{
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.silder::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.slider::-webkit-slider-thumb:hover{
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+.slider::-moz-range-thumb:hover{
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+.silder::-webkit-slider-runnable-track:hover{
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+/*-------File Manager and Playlist-------*/
+
+#playlist-file-manager-icons-container button{
+    background-color: transparent;
+    color: #b3b3b3;
+    border: 0px solid transparent;
+}
+
+#playlist-file-manager-icons-container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
