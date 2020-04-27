@@ -1,28 +1,21 @@
 <html>
-
 <head>
 	<link rel="stylesheet" type="text/css" href="styles/layout.css">
+	<link rel="stylesheet" type="text/css" href="styles/form.css">
 	<link rel="stylesheet" type="text/css" href="styles/corousel.css">
-	<link rel="stylesheet" type="text/css" href="styles/main_header_section.css">
-	<link rel="stylesheet" type="text/css" href="styles/aside.css">
-	<link rel="stylesheet" type="text/css" href="styles/footer.css">
-	<link rel="stylesheet" type="text/css" href="styles/latest_release_section.css">
-	<link rel="stylesheet" type="text/css" href="styles/occasion_list.css">
-	<link rel="stylesheet" type="text/css" href="styles/popular_artist.css">
-	<link rel="stylesheet" type="text/css" href="styles/station_list.css">
-	<link rel="stylesheet" type="text/css" href="styles/latest_english.css">
+	<link rel="stylesheet" type="text/css" href="styles/typography.css">
+	<link rel="stylesheet" type="text/css" href="styles/accordian.css">
 	<script src="https://kit.fontawesome.com/7e5368e77b.js" crossorigin="anonymous"></script>
 	<title>Music Player</title>
 	<link rel="icon" type="image/x-icon" href="images/title/favicon.ico">
 </head>
-
 <body>
-	<header id="main-header">
-		<div id="main-logo-container">
-			<img alt="" src="images/header_section/main-icon-2.png">
+	<header class="body__header">
+		<div class="website__logo__container">
+			<img alt="website logo" src="images/header_section/main-icon.png" class="website__logo image__contain">
 		</div>
-		<div id="favourites">Favourites</div>
-		<div id="search-bar-notification-bell-user-image-container">
+		<div><span class="font-sans-serif letter-spacing-zero-two-rem">Favourites</span></div>
+		<div class="search__bar__notification__bell__user__image__container">
 			<!--Search Bar-->
 			<div class="search-bar">
 				<form>
@@ -35,21 +28,20 @@
 					</button>
 				</form>
 			</div>
-			<div id="notification-bell-user-image-container">
+			<div class="notification__bell__user__image__container">
 				<!--Notification Bell-->
-				<div>
-					<i class="fas fa-bell"></i>
+				<div class="notification__bell__container">
+					<button><i class="fas fa-bell"></i></button>
 				</div>
 				<!--User Information-->
-				<div id="user-image" class="border">
-					<img alt="" src="images/user/user-image.webp">
+				<div class="user__image__container">
+					<img alt="User Image" src="images/user/user-image.webp" class="user__image image__contain">
 				</div>
 			</div>
 		</div>
 	</header>
-
-	<div id="main-and-aside-container">
-		<main>
+	<div class="main__section__aside__section__container">
+		<main class="main">
 			<!--Home Corousel-->
 			<section id="home-corousel">
 				<!--Home Corousel For Favioutes Songs-->
@@ -80,623 +72,511 @@
 					<button class="carousel__indicator"></button>
 				</div>			
 			</section>
-
 			<!--Latest Releases-->
-			<section id="latest_release">
+			<section id="latest-release">
 				<!--Latest Releases Songs-->
-				<header class="section_header">
+				<header class="section__header">
 					Latest Release
 				</header>
-				<ul class = "latest_release-track-container">
-					<li class = "latest_release-track">
-						<div class="logo_detail_container">
-							<div class = "logo_container">
-								<img alt="" src="images/latest_release/onism.jpg">
+				<ul class = "horizontal__list">
+					<li class = "list__item">
+						<div class="latest_release__track__container">
+							<div class="latest__track__logo__container">
+								<img alt="" src="images/latest_release/onism.jpg" class="latest__track__logo">
 							</div>
-							<div class="track_detail_container">
-								<div class="track_name-container">
-									Onism
-								</div>
-								<div class="track_release_date-continer">
-									AUG 11,2017
-								</div>
+							<div class="track__detail">
+								<div class="track__name">Onism</div>
+								<div class="track__singer">AUG 11,2017</div>
 							</div>
-						</div>
-						<div class="drop_down_icon_and_track_duration-container">
-							<div class="drop-down-menu-list-container">
-								<input type="checkbox" class="menu" id="menu">
-								<label for="menu" class="cursor-pointer"><i class="fas fa-ellipsis-h"></i></label>
-								<div class="drop-down-menu-list-content"> 
-									<a href="#"><i class="fas fa-play"></i> Play now</a>
-									<hr/>
-									<a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
-									<hr/>
-									<a href="#"><i class="far fa-heart"></i> Add To Favourites</a>
-									<hr/>
-									<a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+							<div class="accordian__and__track__duration__container">
+								<div class="accordian">
+									<input type="checkbox" id="menu">
+									<label for="menu"><i class="fas fa-ellipsis-h color-grey"></i></label>
+									<div class="accordian__content"> 
+										<a href="#"><i class="fas fa-play"></i> Play now</a>
+										<hr/>
+										<a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
+										<hr/>
+										<a href="#"><i class="far fa-heart"></i> Add To Favourites</a>
+										<hr/>
+										<a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+									</div>
 								</div>
-							</div>
-							<div class="track_duration">
-								4:44
+								<div class="track__duration">
+									4:44
+								</div>
 							</div>
 						</div>
 					</li>
-					<li class = "latest_release-track">
-						<div class="logo_detail_container">
-							<div class = "logo_container">
-								<img alt="" src="images/latest_release/onism.jpg">
+					<li class = "list__item">
+						<div class="latest_release__track__container">
+							<div class="latest__track__logo__container">
+								<img alt="" src="images/latest_release/onism.jpg" class="latest__track__logo">
 							</div>
-							<div class="track_detail_container">
-								<div class="track_name-container">
-									Onism
-								</div>
-								<div class="track_release_date-continer">
-									AUG 11,2017
-								</div>
+							<div class="track__detail">
+								<div class="track__name">Onism</div>
+								<div class="track__singer">AUG 11,2017</div>
 							</div>
-						</div>
-						<div class="drop_down_icon_and_track_duration-container">
-							<div class="drop-down-menu-list-container">
-								<input type="checkbox" class="menu" id="menu2">
-								<label for="menu2" class="cursor-pointer"><i class="fas fa-ellipsis-h"></i></label>
-								<div class="drop-down-menu-list-content"> 
-									<a href="#"><i class="fas fa-play"></i> Play now</a>
-									<hr/>
-									<a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
-									<hr/>
-									<a href="#"><i class="far fa-heart"></i> Add To Favourites</a>
-									<hr/>
-									<a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+							<div class="accordian__and__track__duration__container">
+								<div class="accordian">
+									<input type="checkbox" id="menu1">
+									<label for="menu1"><i class="fas fa-ellipsis-h color-grey"></i></label>
+									<div class="accordian__content"> 
+										<a href="#"><i class="fas fa-play"></i> Play now</a>
+										<hr/>
+										<a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
+										<hr/>
+										<a href="#"><i class="far fa-heart"></i> Add To Favourites</a>
+										<hr/>
+										<a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+									</div>
 								</div>
-							</div>
-							<div class="track_duration">
-								4:44
+								<div class="track__duration">
+									4:44
+								</div>
 							</div>
 						</div>
 					</li>
-					<li class = "latest_release-track">
-						<div class="logo_detail_container">
-							<div class = "logo_container">
-								<img alt="" src="images/latest_release/onism.jpg">
+					<li class = "list__item">
+						<div class="latest_release__track__container">
+							<div class="latest__track__logo__container">
+								<img alt="" src="images/latest_release/onism.jpg" class="latest__track__logo">
 							</div>
-							<div class="track_detail_container">
-								<div class="track_name-container">
-									Onism
-								</div>
-								<div class="track_release_date-continer">
-									AUG 11,2017
-								</div>
+							<div class="track__detail">
+								<div class="track__name">Onism</div>
+								<div class="track__singer">AUG 11,2017</div>
 							</div>
-						</div>
-						<div class="drop_down_icon_and_track_duration-container">
-							<div class="drop-down-menu-list-container">
-								<input type="checkbox" class="menu" id="menu3">
-								<label for="menu3" class="cursor-pointer"><i class="fas fa-ellipsis-h"></i></label>
-								<div class="drop-down-menu-list-content"> 
-									<a href="#"><i class="fas fa-play"></i> Play now</a>
-									<hr/>
-									<a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
-									<hr/>
-									<a href="#"><i class="far fa-heart"></i> Add To Favourites</a>
-									<hr/>
-									<a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+							<div class="accordian__and__track__duration__container">
+								<div class="accordian">
+									<input type="checkbox" id="menu2">
+									<label for="menu2"><i class="fas fa-ellipsis-h color-grey"></i></label>
+									<div class="accordian__content"> 
+										<a href="#"><i class="fas fa-play"></i> Play now</a>
+										<hr/>
+										<a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
+										<hr/>
+										<a href="#"><i class="far fa-heart"></i> Add To Favourites</a>
+										<hr/>
+										<a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+									</div>
 								</div>
-							</div>
-							<div class="track_duration">
-								4:44
+								<div class="track__duration">
+									4:44
+								</div>
 							</div>
 						</div>
 					</li>
-					<li class = "latest_release-track">
-						<div class="logo_detail_container">
-							<div class = "logo_container">
-								<img alt="" src="images/latest_release/onism.jpg">
+					<li class = "list__item">
+						<div class="latest_release__track__container">
+							<div class="latest__track__logo__container">
+								<img alt="" src="images/latest_release/onism.jpg" class="latest__track__logo">
 							</div>
-							<div class="track_detail_container">
-								<div class="track_name-container">
-									Onism
-								</div>
-								<div class="track_release_date-continer">
-									AUG 11,2017
-								</div>
+							<div class="track__detail">
+								<div class="track__name">Onism</div>
+								<div class="track__singer">AUG 11,2017</div>
 							</div>
-						</div>
-						<div class="drop_down_icon_and_track_duration-container">
-							<div class="drop-down-menu-list-container">
-								<input type="checkbox" class="menu" id="menu4">
-								<label for="menu4" class="cursor-pointer"><i class="fas fa-ellipsis-h"></i></label>
-								<div class="drop-down-menu-list-content"> 
-									<a href="#"><i class="fas fa-play"></i> Play now</a>
-									<hr/>
-									<a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
-									<hr/>
-									<a href="#"><i class="far fa-heart"></i> Add To Favourites</a>
-									<hr/>
-									<a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+							<div class="accordian__and__track__duration__container">
+								<div class="accordian">
+									<input type="checkbox" id="menu3">
+									<label for="menu3"><i class="fas fa-ellipsis-h color-grey"></i></label>
+									<div class="accordian__content"> 
+										<a href="#"><i class="fas fa-play"></i> Play now</a>
+										<hr/>
+										<a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
+										<hr/>
+										<a href="#"><i class="far fa-heart"></i> Add To Favourites</a>
+										<hr/>
+										<a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+									</div>
 								</div>
-							</div>
-							<div class="track_duration">
-								4:44
+								<div class="track__duration">
+									4:44
+								</div>
 							</div>
 						</div>
 					</li>
 				</ul>
 			</section>
 			<!--Popular Artists-->
-			<section id="popular_artist">
+			<section id="popular-artist">
 				<!--Link to popular Artist Playlist-->
-				<header class="section_header">
+				<header class="section__header">
 					Popular Artists
 				</header>
-				<ul id="popular-artist-list-container">
-					<li>
-						<img alt="" src="images/popular_artist/ed_sheeran.jpg"/>
-						<span>Ed Sheeran</span>
+				<ul class="horizontal__list">
+					<li class="list__item">
+						<div class="artist">
+							<img alt="" src="images/popular_artist/ed_sheeran.jpg" class="artist__logo"/>
+							<span class="artist__name">Ed Sheeran</span>
+						</div>
 					</li>
-					<li>
-						<img alt="" src="images/popular_artist/coldplay.jpg"/>
-						<span>ColdPlay</span>
+					<li class="list__item">
+						<div class="artist">
+							<img alt="" src="images/popular_artist/coldplay.jpg" class="artist__logo"/>
+							<span class="artist__name">ColdPlay</span>
+						</div>
 					</li>
-					<li>
-						<img alt="" src="images/popular_artist/zyan_malik.jpg"/>
-						<span>Zayn Malik</span>
+					<li class="list__item">
+						<div class="artist">
+							<img alt="" src="images/popular_artist/zyan_malik.jpg" class="artist__logo"/>
+							<span class="artist__name">Zayn Malik</span>
+						</div>
 					</li>
-					<li>
-						<img alt="" src="images/popular_artist/charlie_puth.jpg"/>
-						<span>Charlie Puth</span>
+					<li class="list__item">
+						<div class="artist">
+							<img alt="" src="images/popular_artist/charlie_puth.jpg" class="artist__logo"/>
+							<span class="artist__name">Charlie Puth</span>
+						</div>
 					</li>
-					<li>
-						<img alt="" src="images/popular_artist/imagine-dragons.jpg"/>
-						<span>Imagine Dragon</span>
+					<li class="list__item">
+						<div class="artist">
+							<img alt="" src="images/popular_artist/imagine-dragons.jpg" class="artist__logo"/>
+							<span class="artist__name">Imagine Dragon</span>
+						</div>
 					</li>
-					<li>
-						<img alt="" src="images/popular_artist/bruno_mars.jpg"/>
-						<span>Bruno Mars</span>
+					<li class="list__item">
+						<div class="artist">
+							<img alt="" src="images/popular_artist/bruno_mars.jpg" class="artist__logo"/>
+							<span class="artist__name">Bruno Mars</span>
+						</div>
 					</li>
 				</ul>
 			</section>
-
 			<!--Station-->
-			<section id="station-list-container">
+			<section class="station__list__container">
 				<!--Various Stations-->
-				<figure id="music-station-icon-container">
-					<img alt="" src="images/music_station/music-station.jpg">
-				</figure>
-				<ul class="station-list">
-					<li class="station">
-						<img alt="" src="images/music_station/love.webp">
+				<div class="main__station__logo__container">
+					<img alt="" src="images/music_station/music-station.png" class="main__station__logo">
+				</div>
+				<ul class="horizontal__list station__list">
+					<li class="list__item">
+						<div class="station">
+							<img alt="" src="images/music_station/love.jpg" class="station__logo">
+						</div>
 					</li>
-					<li class="station">
-						<img alt="" src="images/music_station/retro.jpeg">
+					<li class="list__item">
+						<div class="station">
+							<img alt="" src="images/music_station/retro.jpg" class="station__logo">
+						</div>
 					</li>	
-					<li class="station">
-						<img alt="" src="images/music_station/chill.jpg">
+					<li class="list__item">
+						<div class="station">
+							<img alt="" src="images/music_station/chill.jpg" class="station__logo">
+						</div>
 					</li>
-					<li class="station">
-						<img alt="" src="images/music_station/workout.jpg">
+					<li class="list__item">
+						<div class="station">
+							<img alt="" src="images/music_station/workout.jpg" class="station__logo">
+						</div>
 					</li>
-					<li class="station">
-						<img alt="" src="images/music_station/rock.jpg">
+					<li class="list__item">
+						<div class="station">
+							<img alt="" src="images/music_station/rock.jpg" class="station__logo">
+						</div>
 					</li>
-					<li class="station">
-						<img alt="" src="images/music_station/pop.jpg">
+					<li class="list__item">
+						<div class="station">
+							<img alt="" src="images/music_station/pop.jpg" class="station__logo">
+						</div>
 					</li>
 				</ul>
 			</section>
 			<!--Playlist According to Occasion-->
-			<section id="occasion">
+			<section id="occasion-list">
 				<!--Playlist For Various Occasion-->
-				<ul class="occasion-list">
-					<li class="occasion">
-						<img alt="" src="images/occasion/party.jpg">
+				<ul class="horizontal__list">
+					<li class="list__item"> 
+						<div class="occasion">
+							<img alt="" src="images/occasion/party.jpg">
+						</div>
 					</li>
-					<li class="occasion">
-						<img alt="" src="images/occasion/electronic.jpg">
+					<li class="list__item"> 
+						<div class="occasion">
+							<img alt="" src="images/occasion/electronic.jpg">
+						</div>
 					</li>
-					<li class="occasion">
-						<img alt="" src="images/occasion/road_trip.jpg">
+					<li class="list__item"> 
+						<div class="occasion">
+							<img alt="" src="images/occasion/road_trip.jpg">
+						</div>
 					</li>
 				</ul>
 			</section>
 			<!--Latest English Song-->
-			<section class="track-list-container">
+			<section id="latest-english">
 				<!--Latest English Songs List-->
-				<header class="section_header">
+				<header class="section__header">
 					Latest English
 				</header>
-				<ul class="track-list">
-					<li class="track">
-						<img alt="" src="images/song_list/mirage-icon.jpg">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
-						</div>
-					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/new-skin.png">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
+				<ul class="horizontal__list">
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/mirage-icon.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
 						</div>
 					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/worry-bout-us.png">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
-						</div>
-					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/mirage-icon.jpg">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/new-skin.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
 						</div>
 					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/new-skin.png">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/worry-bout-us.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
 						</div>
 					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/worry-bout-us.png">
-						<div class="track_name-container">
-							Osim
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/mirage-icon.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
 						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
+					</li>
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/new-skin.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
+						</div>
+					</li>
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/worry-bout-us.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
 						</div>
 					</li>
 				</ul>
 			</section>
 			<!--Latest Hindi Song-->
-			<section>
+			<section id="latest-hindi">
 				<!--Latest Hindi Songs List-->
-				<header class="section_header">
+				<header class="section__header">
 					Latest Hindi
 				</header>
-								<ul class="track-list">
-					<li class="track">
-						<img alt="" src="images/song_list/mirage-icon.jpg">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
-						</div>
-					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/new-skin.png">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
+				<ul class="horizontal__list">
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/mirage-icon.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
 						</div>
 					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/worry-bout-us.png">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
-						</div>
-					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/mirage-icon.jpg">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/new-skin.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
 						</div>
 					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/new-skin.png">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
-						</div>
-					</li>
-					<li class="track">
-						<img alt="" src="images/song_list/worry-bout-us.png">
-						<div class="track_name-container">
-							Osim
-						</div>
-						<div class="track_release_date-continer">
-							Aug 11,2017
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/worry-bout-us.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
 						</div>
 					</li>
-				</ul>
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/mirage-icon.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
+						</div>
+					</li>
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/new-skin.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
+						</div>
+					</li>
+					<li class="list__item">
+						<div class="track">
+							<img alt="" src="images/song_list/worry-bout-us.jpg" class="track__logo__130X130">
+							<div class="track__detail">
+								<span class="track__name">Onism</span>
+								<span class="track__singer">AUG 11,2017</span>
+							</div>
+						</div>
+					</li>
+				</ul>			
 			</section>
 		</main>
 		<!--Queue List-->
-		<aside>
-			<header id="aside-section-header">
-				<div id="queue-label">
+		<aside class="aside">
+			<header class="aside__header">
+				<span class="font-sans-serif letter-spacing-zero-two-rem">
 					Queue
-				</div>
-				<div id="drop-down-list">
+				</span>
+				<div class="accordian">
 					<input type="checkbox" id="queue">
-					<label for="queue">Queue</label>
-					<div id="drop-down-list-content"> 
-						<a href="#">Playlist</a>
+					<label for="queue">Queue<span></span></label>
+					<div class="accordian__content"> 
+						<a href="#"><span>Playlist</span></a>
 						<hr/>
-						<a href="#">Favourites Song</a>
+						<a href="#"><span>Favourites Song</span></a>
 					</div>
 				</div>
 			</header>
-			<div id="list-of-songs-in-queue-container">
-				<ul>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>01</span>
+			<div class="queue__container">
+				<ul class="queue">
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">01</span>
+							<img alt="" src="images/song_list/mirage-icon.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">Mirage</span>
+								<span class="track__singer">Else</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/mirage-icon.jpg">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Mirage</div>
-								<div class="singer-name">Else</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>02</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">02</span>
+							<img alt="" src="images/song_list/new-skin.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">New Skin</span>
+								<span class="track__singer">Flume</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/new-skin.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">New Skin</div>
-								<div class="singer-name">Flume</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>03</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">03</span>
+							<img alt="" src="images/song_list/worry-bout-us.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">Worry bout us</span>
+								<span class="track__singer">Rossie Lowe</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/worry-bout-us.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Worry bout us</div>
-								<div class="singer-name">Rossie Lowe</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
-						</div>
-
-					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>01</span>
-							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/mirage-icon.jpg">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Mirage</div>
-								<div class="singer-name">Else</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>02</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">01</span>
+							<img alt="" src="images/song_list/mirage-icon.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">Mirage</span>
+								<span class="track__singer">Else</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/new-skin.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">New Skin</div>
-								<div class="singer-name">Flume</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>03</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">02</span>
+							<img alt="" src="images/song_list/new-skin.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">New Skin</span>
+								<span class="track__singer">Flume</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/worry-bout-us.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Worry bout us</div>
-								<div class="singer-name">Rossie Lowe</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>01</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">03</span>
+							<img alt="" src="images/song_list/worry-bout-us.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">Worry bout us</span>
+								<span class="track__singer">Rossie Lowe</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/mirage-icon.jpg">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Mirage</div>
-								<div class="singer-name">Else</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>02</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">01</span>
+							<img alt="" src="images/song_list/mirage-icon.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">Mirage</span>
+								<span class="track__singer">Else</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/new-skin.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">New Skin</div>
-								<div class="singer-name">Flume</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>03</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">02</span>
+							<img alt="" src="images/song_list/new-skin.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">New Skin</span>
+								<span class="track__singer">Flume</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/worry-bout-us.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Worry bout us</div>
-								<div class="singer-name">Rossie Lowe</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>01</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">03</span>
+							<img alt="" src="images/song_list/worry-bout-us.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">Worry bout us</span>
+								<span class="track__singer">Rossie Lowe</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/mirage-icon.jpg">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Mirage</div>
-								<div class="singer-name">Else</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>02</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">01</span>
+							<img alt="" src="images/song_list/mirage-icon.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">Mirage</span>
+								<span class="track__singer">Else</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/new-skin.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">New Skin</div>
-								<div class="singer-name">Flume</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>03</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">02</span>
+							<img alt="" src="images/song_list/new-skin.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">New Skin</span>
+								<span class="track__singer">Flume</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/worry-bout-us.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Worry bout us</div>
-								<div class="singer-name">Rossie Lowe</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>01</span>
+					<li class="queue__element">
+						<div class="queue__track">
+							<span class="track__number">03</span>
+							<img alt="" src="images/song_list/worry-bout-us.jpg" class="track__logo">
+							<div class="track__detail">
+								<span class="track__name">Worry bout us</span>
+								<span class="track__singer">Rossie Lowe</span>
 							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/mirage-icon.jpg">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Mirage</div>
-								<div class="singer-name">Else</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>02</span>
-							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/new-skin.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">New Skin</div>
-								<div class="singer-name">Flume</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="queue-item-container">
-							<div class="song-number">
-								<span>03</span>
-							</div>
-							<div class="music-image-container">
-								<img alt="" src="images/music_album_icons/worry-bout-us.png">
-							</div>
-							<div class="music-detail-container">
-								<div class="song-name">Worry bout us</div>
-								<div class="singer-name">Rossie Lowe</div>
-							</div>
-							<div class="heart-icon">
-								<button><i class="far fa-heart"></i></button>
-							</div>
+							<button class="color-grey"><i class="far fa-heart"></i></button>
 						</div>
 					</li>
 				</ul>
@@ -705,25 +585,25 @@
 	</div>
 	<!--Sound Box-->
 	<footer>
-		<div id="song-detail-container">
-			<div id="music-logo-container">
+		<div class="track__detail__container">
+			<div class="track__logo__container">
 				<img alt="" src="images/footer_section/music-album-icon.jpg">
 			</div>
-			<div id="detail-container">
-				<div class="song-name">Imagine by John Lennon</div>
-				<div class="singer-name">John Lennon</div>
+			<div class="track__detail">
+				<div class="track__name">Imagine by John Lennon</div>
+				<div class="track__singer">John Lennon</div>
 			</div>
-			<div id="like-dislike-icon-container">
+			<div class="like__dislike__icon__container">
 				<button id="heart-icon"><i class="far fa-heart"></i></button>
 				<button id="ban-icon"><i class="fas fa-ban"></i></button>
 			</div>
 		</div>
-		<div id="audio-player-container">
+		<div class="audio__player__container">
 			<audio>
 				<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
 					Your browser dose not Support the audio Tag
 				</audio>
-				<div id="music-player-control-container">
+				<div class="music__player__control__container">
 					<button><i class="fas fa-random"></i></button>
 					<button id="backward-button"><i class="fas fa-backward"></i></button>
 					<button id="play-button" class="font-size-thirty"><i class="fas fa-play font-size-thirty"></i></button>
@@ -731,18 +611,18 @@
 					<button id="forward-button"><i class="fas fa-forward"></i></button>
 					<button><i class="fas fa-redo-alt"></i></button>
 				</div>
-				<div class="slider-container" id="slider-container">
+				<div class="slider__container">
 					<span id="start-time">00:00&nbsp;</span>
 					<input type="range" step="0.05" min="0" max="1" class="slider width-eighty-percent">
 					<span id="end-time">&nbsp;04:57</span>
 				</div>
 			</div>
-			<div id="playlist-file-manager-icons-container">
+			<div class="playlist__file__manager__icons__container">
 				<button><i class="fas fa-list"></i></button>
 				<button><i class="fas fa-tv"></i></button>
 				<input type="range" class="slider width-fifty-percent">
 				<button><i class="fas fa-expand-alt"></i></button>
 			</div>
 		</footer>
-</body>
-</html>
+	</body>
+	</html>

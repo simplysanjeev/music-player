@@ -1,0 +1,36 @@
+/*--------Search Bar-----------*/
+
+.search-bar{
+    width:60%;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #12193e;
+    overflow: hidden;
+}
+
+.search-bar input{
+    background-color: #12193e;
+    width:75%;
+    height:100%;
+    border: 0px solid transparent;
+    letter-spacing: 0.2rem;
+    padding: 0.2rem;
+    color: white;
+}
+
+/*-------button cursor pointer-------*/
+
+button{
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+
+/*----Removing outline------*/
+
+input, button{
+    outline: none;
+}

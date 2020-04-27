@@ -1,0 +1,65 @@
+/*---------accordian--------*/
+.accordian{
+    display: inline-block;
+    position: relative;
+}
+
+.accordian input{
+    display: none;
+}
+
+.accordian label{
+    display: block;
+    padding-top: 5px;
+    text-align: center;
+    color: #4ddabb;
+}
+
+.accordian__content{
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.accordian__content a{
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    padding: 4px;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+}
+
+.accordian input+label+.accordian__content{
+    display:none;
+}
+
+.accordian input:checked+label+.accordian__content{
+    display:block;
+}
+
+
+/*-----------Only for aside section Accordian-----------*/
+
+.accordian label span::after{
+    font-family: "Font Awesome 5 Free";
+    content:'\f0da';
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px 0px 0px 4px;
+    color: white;
+}
+
+.accordian input:checked+label span::after{
+    content:'\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px 0px 0px 4px; 
+    margin-top: 4px; 
+    color: white;
+}

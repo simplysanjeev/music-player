@@ -1,0 +1,31 @@
+
+/*--------Common Font Family used----------*/
+.font-sans-serif{
+	font-family: sans-serif;
+}
+
+
+/*------------Common Letter Spacing used--------------*/
+.letter-spacing-zero-two-rem{
+	letter-spacing: 0.2rem;
+}
+
+.letter-spacing-zero-one-rem{
+	letter-spacing: 0.1rem;
+}
+/*---------White Space Wrap-----------*/
+.white-space-nowrap{
+	white-space: nowrap;
+}
+/*------------------*/
+.color-grey{
+	color: grey;
+}
+
+.artist__name{
+	display: block;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 0.05rem;
+}
