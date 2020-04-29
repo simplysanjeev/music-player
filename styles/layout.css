@@ -125,15 +125,41 @@ section{
     position: relative;
 }
 
-.latest__track__logo__container{
+.lates__release__track__logo__container{
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
     margin: 10px;
+    position: relative;
 }
 
 .latest__track__logo{
-    height: 80px;
-    width: 80px;
-    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
+
+.shadow__and__play__icon__container{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    cursor: pointer;
+}
+
+.shadow__and__play__icon__container:hover{
+    opacity: 1;
+}
+
+
 .accordian__and__track__duration__container{
     position: absolute;
     right: 0px;
@@ -142,11 +168,23 @@ section{
 
 /*------Section [Popular Artist section]------*/
 
-.artist__logo{
+.artist a:active, .artist a:hover, .artist a:visited, .artist a:link{
+    color: white;
+}
+
+.artist__logo__container{
     height: 120px;
     width: 120px;
     border-radius: 50%;
     margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.artist__logo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 /*------Section [Station]------*/
@@ -182,12 +220,28 @@ section{
     width: 100%;
     object-fit: cover;
 }
-
-.station__logo{
-    height: 110px;
-    width: 110px;
+.station{
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     margin: 15px 0px;
+    overflow: hidden;
+    position: relative;
+}
+.station__logo{
+    width: 100%;
+    height: 100%
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.station .shadow__and__play__icon__container{
+    opacity: 1;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 0.05rem;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /*-------Occasion list------*/
@@ -196,27 +250,54 @@ section{
     height: 150px;
     width: 300px;
     margin: 10px 12px;
+    overflow: hidden;
 }
 
-.occasion img{
+.occasion__logo__container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.occasion__logo__container:hover{
+    transform: scale(1.1);
+}
+
+.occasion .shadow__and__play__icon__container{
+    opacity: 1;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 0.05rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.occasion__logo{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-/*------Latest English and Hindi Section-----*/
 
-.track__logo__130X130{
+/*------Latest English and Hindi Section-----*/
+.latest__track__logo__container{
     height: 130px;
     width: 130px;
+    position: relative;
+}
+
+.track__logo__130X130{
+    width: 100%;
+    height: 100%;
 }
 
 .track{
-    margin: 10px;
+    margin: 5px;
 }
 
 .track .track__detail{
-    margin: 10px 0px;
+    margin: 5px 10px;
     width: 100%;
 }
 /*------ || aside section------*/
@@ -264,14 +345,23 @@ section{
     min-width: 15px;
 }
 
-.track__logo{
+.queue__track__logo__conatiner{
     height: 40px;
     width: 40px;
     min-width: 40px;
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
 }
+
+.track__logo{
+    height: 100%;
+    width: 100%;
+}
+
+
 /*---Track detail can be used [again]--*/
+
 .track__detail{
     display: block;
 }
@@ -309,6 +399,7 @@ footer{
     justify-content: space-between;
     background-color: #282828;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 /*----Music player detail box------*/
@@ -594,6 +685,7 @@ footer{
     width: 50px;
     height: 50px;
     margin: 10px;
+    position: relative;
 }
 
 .track__card__logo{
@@ -666,6 +758,7 @@ footer{
     margin: 10px;
     width: 40px;
     height: 40px;
+    position: relative;
 }
 
 .similar__artist__logo{
@@ -705,6 +798,7 @@ footer{
     margin: 10px;
     width: 40px;
     height: 40px;
+    position: relative;
 }
 
 .recently__played__logo{
