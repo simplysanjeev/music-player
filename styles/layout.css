@@ -76,6 +76,8 @@ div{
 
 .main{
     width: 78%;
+    overflow-y: scroll;
+    height: 70vh;
 }
 
 .aside{
@@ -307,6 +309,15 @@ section{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
+}
+.queue__container{
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 .queue{
@@ -581,6 +592,12 @@ footer{
 .card__logo__container{
     width: 300px;
     height: 300px;
+    position: relative;
+}
+
+.card__logo__container .shadow__and__play__icon__container{
+    opacity: 1;
+    background: radial-gradient(transparent, #141b41);
 }
 
 .logo{
@@ -726,6 +743,10 @@ footer{
 .similar__artist__list__container, .recently__played__list__container{
     width: 100%;
     padding: 20px 0px;
+}
+
+.similar__artist__list__container .queue__container, .recently__played__list__container .queue__container{
+    height: 28vh;
 }
 
 .aside__section__header{
