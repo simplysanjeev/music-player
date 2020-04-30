@@ -3,11 +3,12 @@
 	<link rel="stylesheet" type="text/css" href="styles/layout.css">
 	<link rel="stylesheet" type="text/css" href="styles/form.css">
 	<link rel="stylesheet" type="text/css" href="styles/corousel.css">
-	<link rel="stylesheet" type="text/css" href="styles/typography.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="styles/typography.css"> -->
 	<link rel="stylesheet" type="text/css" href="styles/accordian.css">
 	<script src="https://kit.fontawesome.com/7e5368e77b.js" crossorigin="anonymous"></script>
 	<title>Music Player</title>
 	<link rel="icon" type="image/x-icon" href="images/title/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header class="body__header">
@@ -16,7 +17,7 @@
 			<img alt="website logo" src="images/header_section/main-icon.png" class="website__logo image__contain">
 			</a>
 		</div>
-		<div><span class="font-sans-serif letter-spacing-zero-two-rem">Favourites</span></div>
+		<div class="favourites"><span class="font-sans-serif letter-spacing-zero-two-rem">Favourites</span></div>
 		<div class="search__bar__notification__bell__user__image__container">
 			<!--Search Bar-->
 			<div class="search-bar">
@@ -524,7 +525,7 @@
 				</span>
 				<div class="accordian">
 					<input type="checkbox" id="queue">
-					<label for="queue">Queue<span></span></label>
+					<label for="queue">Queue&ensp;&nbsp;<span></span></label>
 					<div class="accordian__content"> 
 						<a href="#"><span>Playlist</span></a>
 						<hr/>

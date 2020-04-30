@@ -62,6 +62,18 @@ div{
     box-shadow: 1px 1px 10px 2px lightgrey;
 }
 
+@media (max-width:800px){
+    .search-bar{
+        display: none;
+    }
+    .favourites{
+        display: none;
+    }
+    .search__bar__notification__bell__user__image__container{
+        width: 10%;
+    }
+}
+
 /*-----[Main Section and Aside Section]-------*/
 
 .main__section__aside__section__container{
@@ -84,6 +96,30 @@ div{
     width: 20%;    
     float:right;
 }
+
+@media (max-width:1200px){
+   .main__section__aside__section__container{
+        margin:0;
+    } 
+}
+
+
+@media (max-width:800px){
+   .main__section__aside__section__container{
+        margin:0;
+    } 
+
+    .main{
+        width: 100%;
+        height: auto;
+    }
+
+    .aside{
+        width: 80%;    
+        float:left;
+    }
+}
+
 
 /*-------- || section [For All Section]------*/
 
@@ -189,7 +225,7 @@ section{
     border-radius: 50%;
 }
 
-/*------Section [Station]------*/
+/*------Section [Station list]------*/
 
 .station__list__container{
     position: relative;
@@ -204,7 +240,6 @@ section{
     height: 150px;
     width: 82%;
     align-items: center;
-    justify-content: space-around;
     overflow: hidden;
     background-color: #101642;
 }
@@ -222,14 +257,16 @@ section{
     width: 100%;
     object-fit: cover;
 }
+
 .station{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
-    margin: 15px 0px;
+    margin: 15px 0px 15px 15px;
     overflow: hidden;
     position: relative;
 }
+
 .station__logo{
     width: 100%;
     height: 100%
@@ -246,11 +283,12 @@ section{
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/*-------Occasion list------*/
+/*-------Section [Occasion]------*/
 
 .occasion{
     height: 150px;
-    width: 300px;
+    /*width: 300px;*/
+    width: 95%;
     margin: 10px 12px;
     overflow: hidden;
 }
@@ -302,6 +340,7 @@ section{
     margin: 5px 10px;
     width: 100%;
 }
+
 /*------ || aside section------*/
 
 .aside__header{
@@ -413,6 +452,12 @@ footer{
     z-index: 10;
 }
 
+@media (max-width:1200px){
+    footer{
+        padding: 0px;
+    }
+}
+
 /*----Music player detail box------*/
 .track__detail__container{
     display: flex;
@@ -449,6 +494,16 @@ footer{
     color: #b3b3b3;
 }
 
+@media (max-width:800px){
+    .track__detail__container{
+        width: auto;
+    }
+    .track__detail__container .track__detail, .like__dislike__icon__container{
+        display: none;
+    }
+}
+
+
 /*--Audio Player Container--*/
 
 .audio__player__container{
@@ -482,10 +537,24 @@ footer{
     margin: 10px 10px 0px 10px;
 }
 
-.slider__container span{
-    letter-spacing: 0.1rem;
-    color: #b3b3b3;
+@media (max-width:800px){
+    .audio__player__container{
+        width: 85%;
+    }
+    .music__player__control__container{
+        width: 80%;
+    }
 }
+
+
+
+.slider__container span{
+        font-size: 10px;
+        letter-spacing: 0.05rem;
+        color: #b3b3b3;
+}
+
+
 /*---Slider----*/
 
 .slider__container{
@@ -561,6 +630,13 @@ footer{
     border: 0px solid transparent;
 }
 
+@media (max-width:800px){
+    .playlist__file__manager__icons__container{
+        display: none;
+    }
+}
+
+
 /*--Width used for footer sliders--*/
 
 .width-eighty-percent{
@@ -579,6 +655,12 @@ footer{
 }
 
 
+
+/*
+
+-------------------------Css below are for other pages----------------------------------------
+
+*/
 /*-------|| Artist Card --------*/
 
 .card{
@@ -587,7 +669,20 @@ footer{
     background-color: #141b41;
     display: flex;
     overflow: hidden;
+    /*flex-wrap: wrap;*/
 }
+
+@media (max-width:800px){
+    .card{
+    width: 100%;
+    height: auto;
+    background-color: #141b41;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+
 
 .card__logo__container{
     width: 300px;
@@ -839,4 +934,39 @@ footer{
 
 .recently__played__icon__container button{
     color: #91a5b1;
+}
+
+
+
+
+
+/*--------Common Font Family used----------*/
+.font-sans-serif{
+    font-family: sans-serif;
+}
+
+
+/*------------Common Letter Spacing used--------------*/
+.letter-spacing-zero-two-rem{
+    letter-spacing: 0.2rem;
+}
+
+.letter-spacing-zero-one-rem{
+    letter-spacing: 0.1rem;
+}
+/*---------White Space Wrap-----------*/
+.white-space-nowrap{
+    white-space: nowrap;
+}
+/*------------------*/
+.color-grey{
+    color: grey;
+}
+
+.artist__name{
+    display: block;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.05rem;
 }
